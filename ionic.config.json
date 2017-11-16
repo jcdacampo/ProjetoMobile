@@ -1,4 +1,5 @@
 {
-  "name": "TrabIonic",
-  "app_id": ""
+  "name": "ProjetoIonic",
+  "app_id": "",
+  "type": "ionic-angular"
 }
