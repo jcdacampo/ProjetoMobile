@@ -1,0 +1,47 @@
+page-login {
+    .list-ios > .item-block:first-child {
+        border-top: none !important;
+    }
+    ::-webkit-input-placeholder {
+        color: white !important; 
+    }
+    :-moz-placeholder {
+        color: white !important; 
+    }
+    .login-page  {
+        background-image:url('https://picsum.photos/375/700?image=3');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .login {
+            padding: 0px !important; 
+            margin-top: 20px;
+            background: none;
+            .usuario {
+                border-bottom:none !important;
+                border-top:none !important;
+            }
+        }
+        input {
+            color:white;
+        }
+        .entrar {
+            margin-top: 15px;
+            height: 35px;
+            background: #10ABF4;
+        }
+        .esqueci-senha {
+            margin-top: 20px;
+            color: white;
+        }
+        .copyright {
+            padding-top: 230px;
+            color: white;
+        }
+        ion-list {
+            padding-top: 20px;
+        }
+        .logo {
+            padding-top: 30px;
+        }
+    }
+}
