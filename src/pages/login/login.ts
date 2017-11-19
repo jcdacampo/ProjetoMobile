@@ -1,3 +1,4 @@
+import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -20,6 +21,11 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+  }
+
+  //Método para chamar a tela inicial sem que apareça o botão de voltar
+  entrar(page){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

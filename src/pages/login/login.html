@@ -1,25 +1,25 @@
 <ion-content padding class="login-page">
 
-  <ion-grid class="logo">
-    <ion-row>
-      <ion-col col-12>
-        <img src="https://hdwallpapersbuzz.com/wp-content/uploads/2017/04/market-logo-1.png">
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <ion-grid class="logo">
+        <ion-row>
+            <ion-col col-12>
+                <img src="https://hdwallpapersbuzz.com/wp-content/uploads/2017/04/market-logo-1.png">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
-  <ion-list>
-  	<ion-item class="login usuario">
-	    <ion-input type="text" placeholder="Digite seu usuário"></ion-input>
-  	</ion-item>
-  	<ion-item class="login senha">
-	    <ion-input type="password" placeholder="Digite sua senha"></ion-input>
-  	</ion-item>
-  </ion-list>
+    <ion-list>
+        <ion-item class="login usuario">
+            <ion-input name="nome" type="text" placeholder="Digite seu usuário"></ion-input>
+        </ion-item>
+        <ion-item class="login senha">
+            <ion-input name="senha" type="password" placeholder="Digite sua senha"></ion-input>
+        </ion-item>
+    </ion-list>
 
-  <button class="login entrar" ion-button  block  (click)="entrar()">Entrar</button>
+    <button class="login entrar" ion-button block (click)="entrar()">Entrar</button>
 
-  <div text-center class="login esqueci-senha" (click)="esqueciSenha()">Esqueceu sua senha?</div>
+    <div text-center class="login esqueci-senha" (click)="esqueciSenha()">Esqueceu sua senha?</div>
 
-  <div text-center class="copyright">Version 1 Build 1.0.0</div>
+    <div text-center class="copyright">Version 1 Build 1.0.0</div>
 </ion-content>

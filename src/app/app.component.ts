@@ -1,3 +1,4 @@
+import { ConfigPage } from './../pages/config/config';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,9 +23,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Login', component: LoginPage }
+      { title: 'Produtos', component: HomePage },
+      { title: 'Configurações', component:ConfigPage },
+      { title: 'Sair', component: LoginPage }
     ];
 
   }
@@ -39,8 +40,8 @@ export class MyApp {
   }
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+      // Reset the content nav to have just this page
+      // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
 }
