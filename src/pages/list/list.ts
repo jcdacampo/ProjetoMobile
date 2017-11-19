@@ -24,9 +24,9 @@ export class ListPage {
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(ListPage, {
-        'title': 'Arroz Valicel 5 KG',
-        'value': 'R$ 8,99',
-        'quantidade': '20'
+        title: 'Arroz Valicel 5 KG',
+        value: 'R$ 8,99',
+        quantidade: '20'
     });
   }
 }
