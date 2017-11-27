@@ -5,8 +5,7 @@ return [
     ],
     'db' => [
         'adapters' => [
-            'dummy' => [],
-            'msysDb' => [],
+            'ProjetoMobile' => [],
         ],
     ],
 ];
