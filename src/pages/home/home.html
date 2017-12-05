@@ -9,18 +9,12 @@
     </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
-    <ion-searchbar></ion-searchbar>
     <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
+        <ion-item *ngFor="let produto of listaProduto">
+           {{produto.descricao}}         
+        </ion-item>
     </ion-list>
-    <div *ngIf="selectedItem" padding>
-        <b>{{selectedItem.title}}</b>
-    </div>
 </ion-content>
