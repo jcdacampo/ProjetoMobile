@@ -9,12 +9,11 @@ page-login {
         color: white !important; 
     }
     .login-page  {
-        background-image:url('http://www.tivisolucoesinterativas.com.br/wp-content/uploads/2015/12/Supermercado.jpg');
+        background-image:url("../../assets/imgs/supermercado.jpg");
         background-repeat: no-repeat;
         background-size: 215% 100%;
         .login {
             padding: 0px !important; 
-            margin-top: 20px;
             background: none;
             .usuario {
                 border-bottom:none !important;

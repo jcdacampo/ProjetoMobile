@@ -25704,14 +25704,13 @@ page-login :-moz-placeholder {
 }
 
 page-login .login-page {
-  background-image: url("http://www.tivisolucoesinterativas.com.br/wp-content/uploads/2015/12/Supermercado.jpg");
+  background-image: url("../../assets/imgs/supermercado.jpg");
   background-repeat: no-repeat;
   background-size: 215% 100%;
 }
 
 page-login .login-page .login {
   padding: 0px !important;
-  margin-top: 20px;
   background: none;
 }
 
