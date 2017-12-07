@@ -34,7 +34,7 @@ var ConfigPage = (function () {
     };
     ConfigPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-config',template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/config/config.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n\n<button menu-toggle = "left" class = "button button-icon icon ion-navicon"></button>\n        </button>\n        <ion-title>Configurações</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>URL para banco de dados</h2>\n    <p>Insira o caminho especifico do seu banco de dados.</p>\n    <ion-input type="text" placeholder="URL://ServidorDeDados"></ion-input>\n    <button ion-button block>Salvar</button>\n</ion-content>`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/config/config.html"*/,
+            selector: 'page-config',template:/*ion-inline-start:"/home/wesley/workspace/ProjetoMobile/src/pages/config/config.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n    <ion-icon name="menu"></ion-icon>\n\n<button menu-toggle = "left" class = "button button-icon icon ion-navicon"></button>\n        </button>\n        <ion-title>Configurações</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h2>URL para banco de dados</h2>\n    <p>Insira o caminho especifico do seu banco de dados.</p>\n    <ion-input type="text" placeholder="URL://ServidorDeDados"></ion-input>\n    <button ion-button block>Salvar</button>\n</ion-content>`/*ion-inline-end:"/home/wesley/workspace/ProjetoMobile/src/pages/config/config.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ConfigPage);
@@ -85,7 +85,7 @@ var LoginPage = (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/login/login.html"*/`<ion-content padding class="login-page">\n\n    <ion-grid class="logo">\n        <ion-row>\n            <ion-col col-12>\n                <img src="../../assets/imgs/logo.png">\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n    <ion-list>\n        <ion-item class="login usuario">\n            <ion-label floating>Usuário</ion-label>\n            <ion-input name="nome" type="text"></ion-input>\n        </ion-item>\n        <ion-item class="login senha">\n            <ion-label floating>Senha</ion-label>\n            <ion-input name="senha" type="password"></ion-input>\n        </ion-item>\n    </ion-list>\n\n    <button class="login entrar" ion-button block (click)="entrar()">Entrar</button>\n\n    <div text-center class="login esqueci-senha" (click)="esqueciSenha()">Esqueceu sua senha?</div>\n\n    <div text-center class="copyright">Version 1 Build 1.0.0</div>\n</ion-content>`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/home/wesley/workspace/ProjetoMobile/src/pages/login/login.html"*/`<ion-content padding class="login-page">\n\n    <ion-grid class="logo">\n        <ion-row>\n            <ion-col col-12>\n                <img src="../../assets/imgs/logo.png">\n            </ion-col>\n        </ion-row>\n    </ion-grid>\n\n    <ion-list>\n        <ion-item class="login usuario">\n            <ion-label floating>Usuário</ion-label>\n            <ion-input name="nome" type="text"></ion-input>\n        </ion-item>\n        <ion-item class="login senha">\n            <ion-label floating>Senha</ion-label>\n            <ion-input name="senha" type="password"></ion-input>\n        </ion-item>\n    </ion-list>\n\n    <button class="login entrar" ion-button block (click)="entrar()">Entrar</button>\n\n    <div text-center class="login esqueci-senha" (click)="esqueciSenha()">Esqueceu sua senha?</div>\n\n    <div text-center class="copyright">Version 1 Build 1.0.0</div>\n</ion-content>`/*ion-inline-end:"/home/wesley/workspace/ProjetoMobile/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);
@@ -358,7 +358,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/app/app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/wesley/workspace/ProjetoMobile/src/app/app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"/home/wesley/workspace/ProjetoMobile/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -376,6 +376,8 @@ var MyApp = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__ = __webpack_require__(180);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -387,36 +389,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var ListPage = (function () {
-    function ListPage(navCtrl, navParams) {
+    function ListPage(navCtrl, navParams, produtoService, toastCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        // If we navigated to this page, we will have an item available as a nav param
-        this.selectedItem = navParams.get('item');
-        this.items = [];
-        this.items.push({
-            title: 'Arroz Valicel 5 KG',
-            value: 'R$ 8,99',
-            quantidade: '20'
-        });
+        this.produtoService = produtoService;
+        this.toastCtrl = toastCtrl;
+        this.produto = {};
+        var produtoParam = this.navParams.get("produto");
+        if (produtoParam != null) {
+            this.navParams = produtoParam;
+        }
     }
-    ListPage_1 = ListPage;
-    ListPage.prototype.itemTapped = function (event, item) {
-        // That's right, we're pushing to ourselves!
-        this.navCtrl.push(ListPage_1, {
-            title: 'Arroz Valicel 5 KG',
-            value: 'R$ 8,99',
-            quantidade: '20'
-        });
-    };
-    ListPage = ListPage_1 = __decorate([
+    ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/list/list.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>Detalhes</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n    </ion-list>\n    <div *ngIf="selectedItem" padding>\n        You navigated here from <b>{{selectedItem.title}}</b>\n    </div>\n</ion-content>`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/list/list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/wesley/workspace/ProjetoMobile/src/pages/list/list.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n        <ion-title>Detalhes</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n        <ion-list>\n                <ion-item>\n                        <ion-label stacked>Descrição</ion-label>\n                        <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>         \n                 </ion-item>\n        </ion-list>\n</ion-content>\n\n`/*ion-inline-end:"/home/wesley/workspace/ProjetoMobile/src/pages/list/list.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__["a" /* ProdutoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__["a" /* ProdutoService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__["a" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]) === "function" && _d || Object])
     ], ListPage);
     return ListPage;
-    var ListPage_1;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=list.js.map
@@ -454,7 +448,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n\n<button menu-toggle = "left" class = "button button-icon icon ion-navicon"></button>\n        </button>\n        <ion-title>Produtos</ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n    <ion-list>\n        <ion-item *ngFor="let produto of listaProduto">\n           {{produto.descricao}}         \n        </ion-item>\n    </ion-list>\n</ion-content>`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/wesley/workspace/ProjetoMobile/src/pages/home/home.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n\n<button menu-toggle = "left" class = "button button-icon icon ion-navicon"></button>\n        </button>\n        <ion-title>Produtos</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <ion-list>\n        <button ion-item *ngFor="let produto of listaProduto" (click)="goToEdit(produto)">\n           {{ produto.descricao }}         \n        </button>\n    </ion-list>\n</ion-content>`/*ion-inline-end:"/home/wesley/workspace/ProjetoMobile/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_produto_service_produto_service__["a" /* ProdutoService */]])
     ], HomePage);

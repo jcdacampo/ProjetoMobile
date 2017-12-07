@@ -9,12 +9,10 @@
     </ion-navbar>
 </ion-header>
 
-
-
 <ion-content padding>
     <ion-list>
-        <ion-item *ngFor="let produto of listaProduto">
-           {{produto.descricao}}         
-        </ion-item>
+        <button ion-item *ngFor="let produto of listaProduto" (click)="goToEdit(produto)">
+           {{ produto.descricao }}         
+        </button>
     </ion-list>
 </ion-content>

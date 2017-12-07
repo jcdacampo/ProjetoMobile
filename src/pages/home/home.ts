@@ -10,13 +10,19 @@ import { ProdutoService } from '../../providers/produto-service/produto-service'
 export class HomePage {
 
   public listaProduto = [];
-
-  constructor (private produtoService: ProdutoService) {
+  
+  constructor (private produtoService: ProdutoService,
+               public navCtrl: NavController,
+               public navParams: NavParams) {
     this.getProdutos();
   }
 
   getProdutos() {
     this.produtoService.getProdutos()
     .subscribe(data => this.listaProduto = data._embedded.produtos);
+  }
+
+  goToEdit(produto){
+   this.navCtrl.push(ListPage, {produto: produto})
   }
 }
