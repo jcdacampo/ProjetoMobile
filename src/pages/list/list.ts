@@ -16,12 +16,12 @@ export class ListPage {
               public produtoService: ProdutoService,
               public toastCtrl: ToastController) {
                 
-    this.produto = {};
+    this.produto = [];
 
     let produtoParam = this.navParams.get("produto");
   
     if(produtoParam != null){
-      this.navParams = produtoParam; 
+      this.produto = produtoParam; 
      }
   }
 }

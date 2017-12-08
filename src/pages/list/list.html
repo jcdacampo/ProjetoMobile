@@ -10,9 +10,25 @@
 <ion-content>
         <ion-list>
                 <ion-item>
-                        <ion-label stacked>Descrição</ion-label>
-                        <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>         
+                        <ion-label stacked="">Código</ion-label>
+                        <ion-input text="" [(ngModel)]="produto.id"></ion-input>       
                  </ion-item>
+                 <ion-item>
+                        <ion-label stacked="">Descrição</ion-label>
+                        <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                            <ion-label stacked="">Quantidade</ion-label>
+                            <ion-input type="number" [(ngModel)]="produto.quantidade"></ion-input>
+                       </ion-item>
+                       <ion-item>
+                            <ion-label stacked="">Valor Unitário</ion-label>
+                            <ion-input text="" [(ngModel)]="produto.valorunit"></ion-input>
+                       </ion-item>
+                       <ion-item>
+                            <ion-label stacked="">Toal</ion-label>
+                            <ion-input text="" [(ngModel)]="produto.valortotal"></ion-input>  
+                       </ion-item>
         </ion-list>
 </ion-content>
 

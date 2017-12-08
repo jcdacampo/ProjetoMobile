@@ -12,7 +12,12 @@
 <ion-content padding>
     <ion-list>
         <button ion-item *ngFor="let produto of listaProduto" (click)="goToEdit(produto)">
-           {{ produto.descricao }}         
+           <ion-item>
+                {{ produto.descricao }}  
+               </ion-item>
+               <ion-item>
+                    {{ produto.quantidade }}  Unidades
+            </ion-item>     
         </button>
     </ion-list>
 </ion-content>
