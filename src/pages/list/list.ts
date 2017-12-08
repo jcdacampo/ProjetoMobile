@@ -22,6 +22,27 @@ export class ListPage {
   
     if(produtoParam != null){
       this.produto = produtoParam; 
-     }
+    }
+  }
+
+  save() {
+    if (this.produto.id) {
+      this.produtoService.updateProdutos(this.produto).subscribe(item => {
+        this.navCtrl.pop();
+        this.toastCtrl.create({
+  
+          message: "SUCESSO: Produto atualizado.",
+          duration: 4000
+  
+        }).present();
+      }, error =>{
+        this.toastCtrl.create({
+  
+          message: "Erro ao atualizar produto.",
+          duration: 4000
+  
+        }).present();
+      })
+    }
   }
 }

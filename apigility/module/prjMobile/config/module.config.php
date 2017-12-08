@@ -5,7 +5,7 @@ return [
             'prj-mobile.rest.produtos' => [
                 'type' => 'Segment',
                 'options' => [
-                    'route' => '/produtos',
+                    'route' => '/produtos[/:produtos_id]',
                     'defaults' => [
                         'controller' => 'prjMobile\\V1\\Rest\\Produtos\\Controller',
                     ],
@@ -29,11 +29,13 @@ return [
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
+                4 => 'POST',
             ],
             'collection_http_methods' => [
                 0 => 'GET',
                 1 => 'DELETE',
                 2 => 'PUT',
+                3 => 'POST',
             ],
             'collection_query_whitelist' => [],
             'page_size' => 25,
@@ -125,6 +127,26 @@ return [
                 'required' => false,
                 'filters' => [],
                 'validators' => [],
+            ],
+        ],
+    ],
+    'zf-mvc-auth' => [
+        'authorization' => [
+            'prjMobile\\V1\\Rest\\Produtos\\Controller' => [
+                'collection' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
             ],
         ],
     ],

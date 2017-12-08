@@ -19,7 +19,9 @@ export class ProdutoService {
   constructor(private http: Http) {
     console.log('Hello ProdutoServiceProvider Provider');
   }
-
+  /**
+   * Trazer os produtos e listar
+   */
   getProdutos(){
     return this.http.get(this.API_URL)
     .do(this.logResponse)
@@ -32,6 +34,24 @@ export class ProdutoService {
 
   private extractData(res: Response) {
     return res.json();
+  }
+
+  /**
+   * Salvar os produtos na edição
+   * @param obj 
+   */
+  saveProdutos(obj){
+    return this.http.post(this.API_URL, obj)
+    .map(res => res.json());
+  }
+
+  /**
+   * Atualiza os produtos, pelo ID.
+   * @param obj 
+   */
+  updateProdutos(obj){
+    return this.http.put(this.API_URL+"/"+obj.id, obj)
+    .map(res => res.json());
   }
 
 }
