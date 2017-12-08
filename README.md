@@ -1,1 +1,1 @@
-### :point_right: Wesley é um negro maravilhoso. :point_left:
+### :point_right: Documentação em breve. :point_left:

@@ -197,10 +197,12 @@ var ListPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-list',template:/*ion-inline-start:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/list/list.html"*/`<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Detalhes</ion-title>\n        <ion-buttons end>\n            <button icon-only="" ion-button="" (click)="save()">\n                Salvar\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item>\n            <ion-label stacked="">Código</ion-label>\n            <ion-input text="" [(ngModel)]="produto.id"></ion-input>       \n        </ion-item>\n        <ion-item>\n            <ion-label stacked="">Descrição</ion-label>\n            <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label stacked="">Quantidade</ion-label>\n            <ion-input type="number" [(ngModel)]="produto.quantidade"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label stacked="">Valor Unitário</ion-label>\n            <ion-input text="" [(ngModel)]="produto.valorunit"></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label stacked="">Toal</ion-label>\n            <ion-input text="" [(ngModel)]="produto.valortotal"></ion-input>  \n        </ion-item>\n    </ion-list>\n</ion-content>\n\n`/*ion-inline-end:"/home/jean/Projetos/Projetos Ionic/ProjetoMobile/src/pages/list/list.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__["a" /* ProdutoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__["a" /* ProdutoService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__["a" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_produto_service_produto_service__["a" /* ProdutoService */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular_components_toast_toast_controller__["a" /* ToastController */]])
     ], ListPage);
     return ListPage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=list.js.map
@@ -497,10 +499,9 @@ var ProdutoService = (function () {
     };
     ProdutoService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_http__["a" /* Http */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_http__["a" /* Http */]])
     ], ProdutoService);
     return ProdutoService;
-    var _a;
 }());
 
 //# sourceMappingURL=produto-service.js.map
