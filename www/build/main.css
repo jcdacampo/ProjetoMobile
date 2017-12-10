@@ -25736,6 +25736,22 @@ page-home .button-ios.activated {
   background-color: #017a2f;
 }
 
+page-list .item-ios {
+  padding-left: 0;
+}
+
+page-list .salvar {
+  background-color: #1cbd47;
+}
+
+page-list .salvar span {
+  color: #fff;
+}
+
+page-list .button-ios.activated {
+  background-color: #017a2f;
+}
+
 page-login .list-ios > .item-block:first-child {
   border-top: none !important;
 }

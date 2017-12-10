@@ -26,7 +26,13 @@ import { ProdutoService } from '../providers/produto-service/produto-service';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      platforms: {
+        ios: {
+            backButtonText: 'Voltar'
+        }
+      }
+    }),
     HttpModule
   ],
   bootstrap: [IonicApp],

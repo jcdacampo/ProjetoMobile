@@ -1,3 +1,14 @@
 page-list {
-
+    .item-ios {
+        padding-left: 0;
+    }
+    .salvar {
+        background-color: #1cbd47;
+        span {
+            color: #fff;
+        }
+    }
+    .button-ios.activated {
+        background-color: #017a2f;  
+    }
 }

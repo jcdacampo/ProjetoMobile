@@ -4,36 +4,53 @@
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>Detalhes</ion-title>
-        <ion-buttons end>
-            <button icon-only="" ion-button="" (click)="save()">
-                Salvar
-            </button>
-        </ion-buttons>
+
     </ion-navbar>
 </ion-header>
 
 <ion-content>
-    <ion-list>
-        <ion-item>
-            <ion-label stacked="">Código</ion-label>
-            <ion-input text="" [(ngModel)]="produto.id"></ion-input>       
-        </ion-item>
-        <ion-item>
-            <ion-label stacked="">Descrição</ion-label>
-            <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label stacked="">Quantidade</ion-label>
-            <ion-input type="number" [(ngModel)]="produto.quantidade"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label stacked="">Valor Unitário</ion-label>
-            <ion-input text="" [(ngModel)]="produto.valorunit"></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label stacked="">Valor Total</ion-label>
-            <ion-input text="" [(ngModel)]="produto.valortotal"></ion-input>  
-        </ion-item>
-    </ion-list>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked color="primary">Código</ion-label>
+                    <ion-input text="" [(ngModel)]="produto.id"></ion-input>       
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked color="primary">Quantidade</ion-label>
+                    <ion-input type="number" [(ngModel)]="produto.quantidade"></ion-input>
+                </ion-item>  
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-12>
+                <ion-item>
+                    <ion-label stacked color="primary">Descrição</ion-label>
+                    <ion-input text="" [(ngModel)]="produto.descricao"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked color="primary">Valor Unitário</ion-label>
+                    <ion-input text="" [(ngModel)]="produto.valorunit"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col col-6>
+                <ion-item>
+                    <ion-label stacked color="primary">Valor Total</ion-label>
+                    <ion-input text="" [(ngModel)]="produto.valortotal"></ion-input>  
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <button ion-button full icon-start class="salvar" (click)="save()">
+        Salvar
+    </button>
+
 </ion-content>
 
