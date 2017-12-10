@@ -1,6 +1,9 @@
 page-home {
+    .card-ios {
+        box-shadow: none;
+    }
     .scroll-content{
-        background-color: #7ddba1;
+        background-color:#fff;
         padding: 0 !important;
     }
     .button-inner {
@@ -8,5 +11,14 @@ page-home {
     }
     ion-searchbar {
         background-color: transparent !important;
+    }
+    .editar {
+        background-color: #1cbd47;
+        span {
+            color: #fff;
+        }
+    }
+    .button-ios.activated {
+        background-color: #017a2f;;
     }
 }

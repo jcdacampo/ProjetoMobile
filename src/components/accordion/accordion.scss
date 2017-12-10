@@ -1,0 +1,25 @@
+accordion {
+    .list-ios > .item-block:first-child {
+        border: none;
+    }
+    .list-ios > .item-block:last-child {
+        border: none;
+    }
+    .list-ios > .produto {
+        border-top: 0.55px solid #c8c7cc !important;
+    }
+    .card-header {
+        background-color: #1c8d47;
+        color: #fff;
+    }
+    
+    .card-content {
+        padding: 0px 16px;
+        max-height: 0px;
+    }
+    .item-produto {
+        background-color: #1c8d47;
+        color: #fff;
+        font-size: 18px;
+    }
+}

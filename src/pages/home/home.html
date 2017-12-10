@@ -10,14 +10,23 @@
 </ion-header>
 
 <ion-content padding>
+  <accordion *ngFor="let produto of listaProduto" [title]="produto.descricao">
     <ion-list>
-        <button ion-item *ngFor="let produto of listaProduto" (click)="goToEdit(produto)">
-           <ion-item>
-                {{ produto.descricao }}  
-               </ion-item>
-               <ion-item>
-                    {{ produto.quantidade }}  Unidades
-            </ion-item>     
-        </button>
+      <ion-item class="produto">
+        Código: <b>{{ produto.id }}</b>
+      </ion-item>
+      <ion-item class="produto">
+        Quantidade: <b>{{ produto.quantidade }}</b>
+      </ion-item>
+      <ion-item class="produto">
+        Valor unitário: <b>R$ {{ produto.valorunit }}</b>
+      </ion-item>
+      <ion-item class="produto">
+        Valor total: <b>R$ {{ produto.valortotal }}</b>
+      </ion-item>
     </ion-list>
+    <button ion-button full class="editar" (click)="goToEdit(produto)">
+        Editar
+    </button>
+  </accordion>
 </ion-content>

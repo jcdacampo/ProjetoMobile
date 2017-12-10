@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { ConfigPage } from './../pages/config/config';
+import { AccordionComponent } from '../components/accordion/accordion';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,7 +21,8 @@ import { ProdutoService } from '../providers/produto-service/produto-service';
     HomePage,
     ListPage,
     LoginPage,
-    ConfigPage
+    ConfigPage,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,

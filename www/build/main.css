@@ -25678,8 +25678,41 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+accordion .list-ios > .item-block:first-child {
+  border: none;
+}
+
+accordion .list-ios > .item-block:last-child {
+  border: none;
+}
+
+accordion .list-ios > .produto {
+  border-top: 0.55px solid #c8c7cc !important;
+}
+
+accordion .card-header {
+  background-color: #1c8d47;
+  color: #fff;
+}
+
+accordion .card-content {
+  padding: 0px 16px;
+  max-height: 0px;
+}
+
+accordion .item-produto {
+  background-color: #1c8d47;
+  color: #fff;
+  font-size: 18px;
+}
+
+page-home .card-ios {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 page-home .scroll-content {
-  background-color: #7ddba1;
+  background-color: #fff;
   padding: 0 !important;
 }
 
@@ -25691,6 +25724,18 @@ page-home ion-searchbar {
   background-color: transparent !important;
 }
 
+page-home .editar {
+  background-color: #1cbd47;
+}
+
+page-home .editar span {
+  color: #fff;
+}
+
+page-home .button-ios.activated {
+  background-color: #017a2f;
+}
+
 page-login .list-ios > .item-block:first-child {
   border-top: none !important;
 }
@@ -25700,6 +25745,10 @@ page-login ::-webkit-input-placeholder {
 }
 
 page-login :-moz-placeholder {
+  color: white !important;
+}
+
+page-login .item-ios {
   color: white !important;
 }
 
@@ -25735,7 +25784,7 @@ page-login .login-page .esqueci-senha {
 }
 
 page-login .login-page .copyright {
-  padding-top: 100px;
+  padding-top: 70px;
   color: white;
 }
 
