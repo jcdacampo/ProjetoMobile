@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
-import { Observable } from 'rxjs/Observable';
+//import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the ProdutoServiceProvider provider.
@@ -32,17 +32,8 @@ export class ProdutoService {
     console.log(res);
   }
 
-  private extractData(res: Response) {
+  private extractData(res: Response) { 
     return res.json();
-  }
-
-  /**
-   * Salvar os produtos na edição
-   * @param obj 
-   */
-  saveProdutos(obj){
-    return this.http.post(this.API_URL, obj)
-    .map(res => res.json());
   }
 
   /**
@@ -50,6 +41,7 @@ export class ProdutoService {
    * @param obj 
    */
   updateProdutos(obj){
+    obj.valortotal = obj.quantidade * obj.valorunit;
     return this.http.put(this.API_URL+"/"+obj.id, obj)
     .map(res => res.json());
   }
