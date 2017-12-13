@@ -1,4 +1,4 @@
-### :point_right: Documentação em breve. :point_left:
+### :point_right: Documentação :point_left:
 ### Ionic View OK
 
 Para iniciar a utilização deste projeto é necessário algumas configurações:
