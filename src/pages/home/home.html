@@ -10,6 +10,12 @@
 </ion-header>
 
 <ion-content padding>
+     <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
   <accordion *ngFor="let produto of listaProduto" [title]="produto.descricao">
     <ion-list>
       <ion-item class="produto">
