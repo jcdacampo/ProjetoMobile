@@ -26,16 +26,15 @@ Agora você pode acessar sua API, vá ate o navegador e cole a URL-> http://loca
 
 Com sua API rodando, vá até database e no seu adaptador configure o adaptador.
 Para nossa aplicação será adotada esse padrão abaixo:
-#---------------------------#
+
+
 DRIVER: PDO_Pgsql
 DATABASE: ProjetoMobile
 USERNAME: postgres
 PASSWORD: senha_banco_dados
 HOSTNAME: localhost
 PORT: 5432
-#---------------------------#
 
-#---------------------------#
 Exemplo:
 DRIVER: PDO_Pgsql, PDO_Mysql
 DATABASE: nome_banco_dados
